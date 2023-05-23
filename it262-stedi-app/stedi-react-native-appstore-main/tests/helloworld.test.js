@@ -1,11 +1,9 @@
-import hello from './helloworld.js';
+import hello from '../utils/helloworld.js';
 import assert from 'assert';
 
 it ("Should say hello", ()=>{
-
-    const hello = hello();
-    
-    assert.equal(hello, "hello");
-
+    const hi = hello();
+    // console.log("This is the value of " + hi)
+    assert.equal(hi,"hello");
 
 });
